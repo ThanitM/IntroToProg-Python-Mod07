@@ -4,7 +4,7 @@
 # with structured error handling
 # Change Log: (Who, When, What)
 #   RRoot,1/1/2030,Created Script
-#   <Your Name Here>,<Date>,<Activity>
+#   Thanit Mitparien, 08/12/2026, Updated Program for Assignment 7
 # ------------------------------------------------------------------------------------------ #
 import json
 import _io
@@ -264,7 +264,7 @@ class FileProcessor:
                 list_of_dictionary_data.append(student_json)
 
             file = open(file_name, "w")
-            json.dump(student_data, file, indent=2)
+            json.dump(list_of_dictionary_data, file, indent=2)
             IO.output_student_and_course_names(student_data=student_data)
         except Exception as e:
             message = "Error: There was a problem with writing to the file.\n"
